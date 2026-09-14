@@ -1,17 +1,22 @@
-# ames-housing-ml-project
-Predicting house prices using machine learning
-# Прогноз цен на недвижимость (Ames Housing)
+Ames Housing Price Prediction
 
-Проект по машинному обучению (задача регрессии). Модель предсказывает стоимость домов в штате Айова с точностью **R² ≈ 0.947**.
+Machine learning project for predicting house prices using the Ames Housing dataset.
 
-Язык: Python
-Библиотеки: Pandas, NumPy, SciPy (f_oneway), Scikit-Learn, XGBoost, Category Encoders
+What I did
 
-Что было сделано
-Предобработка: Очистка данных, заполнение пропусков (включая медиану по районам).
-Пайплайн: Масштабирование чисел (`StandardScaler`) и кодирование категорий (`TargetEncoder`) объединены в `ColumnTransformer`.
-Моделирование: Настроен градиентный бустинг `XGBRegressor`, лучшие гиперпараметры подобраны через `GridSearchCV` на 5 фолдах.
+* Data cleaning and missing value handling
+* Train/Test split with data leakage prevention
+* Feature selection using ANOVA
+* Target Encoding for categorical features
+* Feature scaling
+* XGBoost regression
+* Hyperparameter tuning with GridSearchCV
+* Model evaluation using R², MAE and RMSE
 
-Как запустить
-1. Установить библиотеки: `pip install -r requirements.txt`
-2. Запустить код: `python L1.py`
+Technologies
+
+Python · Pandas · NumPy · SciPy · Scikit-learn · XGBoost · Category Encoders
+
+Result
+
+R²: ~0.947
