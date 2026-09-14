@@ -13,7 +13,7 @@ pd.set_option("display.max_columns", None)
 pd.set_option("display.max_rows", None)
 pd.set_option("display.width", 1000)
 
-df = pd.read_csv(r"C:\Users\User\Desktop\housing.csv")
+df = pd.read_csv("housing.csv")
 
 
 
@@ -83,7 +83,8 @@ for col in obj_col2:
     else:
         obj_col2_drop.append(col)
 
-print(obj_col2_drop)
+print(obj_col2_drop) #[]
+#решил не использовать
 
 
 
