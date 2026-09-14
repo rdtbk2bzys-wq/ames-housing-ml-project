@@ -6,7 +6,7 @@ What I did
 
 * Data cleaning and missing value handling
 * Train/Test split with data leakage prevention
-* Feature selection using ANOVA
+* Feature selection using ANOVA #don't use
 * Target Encoding for categorical features
 * Feature scaling
 * XGBoost regression
